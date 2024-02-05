@@ -23,7 +23,7 @@ const options = {
          const div = document.createElement('div');
          const div1 = document.createElement('div');
          div1.className = "card"
-         const inimg = "<img src = " +baseURL+result.poster_path+">";
+         const inimg = "<img src = " +baseURL+result.poster_path+" class='image'>";
         //  console.log(inimg)
          const intext = `${result.original_title}`;
          el.innerHTML= (intext);
