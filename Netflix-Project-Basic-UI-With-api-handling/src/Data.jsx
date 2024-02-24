@@ -53,15 +53,16 @@ function Data() {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center items-center">
+      <div className="flex justify-start items-center overflow-scroll whitespace-nowrap">
         {result.map((val) => {
           return (
-            <div key={val.id}>
+            <div key={val.id} className="size-full">
               <img
                 src={baseURL + val.poster_path}
                 alt="moive poster"
-                className="m-5"
+                className=" max-w-none h-[450px]"
               />
+              
             </div>
           );
         })}
